@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry Noza ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            background: #add8e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        /* Dark overlay */
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        /* Popup */
+        .popup {
+            width: 90%;
+            max-width: 500px;
+            background: white;
+            border-radius: 25px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            animation: popup 0.8s ease-out;
+            position: relative;
+        }
+        @keyframes popup {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            70% {
+                transform: scale(1.08);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        /* Kiss */
+        .kiss {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: kiss 1.2s infinite alternate;
+        }
+        @keyframes kiss {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+        h1 {
+            color: #000000;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .message {
+            color: #000000;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+        .heart {
+            color: red;
+            font-size: 30px;
+            margin-top: 20px;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+        }
+        /* Floating kisses in background */
+        .floating-kiss {
+            position: fixed;
+            font-size: 30px;
+            animation: float 6s linear infinite;
+            opacity: 0.7;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            20% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-120vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        .kiss1 {
+            left: 10%;
+            animation-delay: 1s;
+        }
+        .kiss2 {
+            left: 30%;
+            animation-delay: 3s;
+        }
+        .kiss3 {
+            left: 70%;
+            animation-delay: 0s;
+        }
+        .kiss4 {
+            left: 90%;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating red kisses -->
+    <div class="floating-kiss kiss1">💋</div>
+    <div class="floating-kiss kiss2">💋</div>
+    <div class="floating-kiss kiss3">💋</div>
+    <div class="floating-kiss kiss4">💋</div>
+    <!-- Apology Popup -->
+    <div class="overlay">
+        <div class="popup">
+            <div class="kiss">💋</div>
+            <h1>I Am Sorry, Noza ❤️</h1>
+            <p class="message">
+                I Am Sorry Noza, I have done the worst thing to you
+                but I am asking for your forgiveness Sukwini wam
+            </p>
+            <div class="heart">❤️</div>
+        </div>
+    </div>
+</body>
+</html>
